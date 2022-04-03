@@ -14,12 +14,31 @@ namespace mvc_game.Controllers
 {
     public class PlayersController : Controller
     {
-        private PlayerDbContext db = new PlayerDbContext();
+        private readonly PlayerDbContext db = new PlayerDbContext();
 
         // GET: Players
-        public async Task<ActionResult> Index()
+        public ActionResult Index(string country, string searchName)
         {
-            return View(await db.Players.ToListAsync());
+            //search by country
+            var countryList = new List<string>();
+            var countryQuery = from c in db.Players orderby c.Country select c.Country;
+            countryList.AddRange(countryQuery.Distinct());
+            ViewBag.country = new SelectList(countryList);
+
+
+            //search by player's name
+            var players = from player in db.Players select player;
+
+            if (!String.IsNullOrEmpty(searchName))
+            {
+                players = players.Where(p => p.Name.Contains(searchName));
+            }
+
+            if (!String.IsNullOrEmpty(country))
+            {
+                players = players.Where(c => c.Country == country);
+            }
+            return View(players);
         }
 
         // GET: Players/Details/5
