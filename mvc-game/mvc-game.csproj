@@ -132,15 +132,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204030929211_InintialDb.cs" />
+    <Compile Include="Migrations\202204030929211_InintialDb.Designer.cs">
+      <DependentUpon>202204030929211_InintialDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Data\PlayerDbContext.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Playerss.mdf" />
-    <Content Include="App_Data\Playerss_log.ldf">
-      <DependentUpon>Playerss.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -184,7 +185,9 @@
     <Content Include="Views\Players\Edit.cshtml" />
     <Content Include="Views\Players\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -197,6 +200,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202204030929211_InintialDb.resx">
+      <DependentUpon>202204030929211_InintialDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
