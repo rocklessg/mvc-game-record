@@ -32,56 +32,72 @@ namespace mvc_game.Migrations
                 {
                     Name = "Andrew Peters",
                     TotalGamePlayed = 432,
-                    TotalScores = 2346
+                    TotalScores = 2346,
+                    Country = "Argentina",
+                    GameType = "Hockey"
                 },
 
                 new Models.Player
                 {
                     Name = "Brice Lambson",
                     TotalGamePlayed = 432,
-                    TotalScores = 2346
+                    TotalScores = 2346,
+                    Country = "Canada",
+                    GameType = "Rogby"
                 },
 
                 new Models.Player
                 {
                     Name = "Rowan Miller",
                     TotalGamePlayed = 409,
-                    TotalScores = 2435
+                    TotalScores = 2435,
+                    Country = "Swedin",
+                    GameType = "Tennis"
                 },
 
                 new Models.Player
                 {
                     Name = "Jack Bahour",
                     TotalGamePlayed = 456,
-                    TotalScores = 2857
+                    TotalScores = 2857,
+                    Country = "Texas",
+                    GameType = "Hockey"
                 },
 
                 new Models.Player
                 {
                     Name = "Roja Miller",
                     TotalGamePlayed = 560,
-                    TotalScores = 3578
+                    TotalScores = 3578,
+                    Country = "Argentina",
+                    GameType = "Football"
                 },
 
                 new Models.Player
                 {
                     Name = "Lineol Messi",
                     TotalGamePlayed = 690,
-                    TotalScores = 4467
+                    TotalScores = 4467,
+                    Country = "Argentina",
+                    GameType = "Football"
                 },
 
                 new Models.Player
                 {
                     Name = "Muhammad Salah",
                     TotalGamePlayed = 600,
-                    TotalScores = 3897
+                    TotalScores = 3897,
+                    Country = "Turkey",
+                    GameType = "Football"
                 },
 
                 new Models.Player
                 {
                     Name = "Vandezer",
                     TotalGamePlayed = 489,
-                    TotalScores = 3
+                    TotalScores = 3,
+                    Country = "Holland",
+                    GameType = "Football"
                 }
 
                 );

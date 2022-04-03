@@ -136,6 +136,10 @@
     <Compile Include="Migrations\202204030929211_InintialDb.Designer.cs">
       <DependentUpon>202204030929211_InintialDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204031211552_UpdatedModel.cs" />
+    <Compile Include="Migrations\202204031211552_UpdatedModel.Designer.cs">
+      <DependentUpon>202204031211552_UpdatedModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Data\PlayerDbContext.cs" />
     <Compile Include="Models\Player.cs" />
@@ -204,6 +208,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202204030929211_InintialDb.resx">
       <DependentUpon>202204030929211_InintialDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204031211552_UpdatedModel.resx">
+      <DependentUpon>202204031211552_UpdatedModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
