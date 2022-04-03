@@ -6,5 +6,7 @@
         public string Name { get; set; }
         public int TotalGamePlayed { get; set; }
         public int TotalScores { get; set; }
+        public string Country { get; set; }
+        public string GameType { get; set; }
     }
 }

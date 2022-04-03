@@ -49,7 +49,7 @@ namespace mvc_game.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,TotalGamePlayed,TotalScores")] Player player)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Name,TotalGamePlayed,TotalScores,Country,GameType")] Player player)
         {
             if (ModelState.IsValid)
             {
@@ -81,7 +81,7 @@ namespace mvc_game.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,TotalGamePlayed,TotalScores")] Player player)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,TotalGamePlayed,TotalScores,Country,GameType")] Player player)
         {
             if (ModelState.IsValid)
             {
